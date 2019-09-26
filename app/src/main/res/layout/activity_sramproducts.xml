@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:layout_marginTop="250dp"
+            android:id="@+id/sram"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="SRAM Products"
+            android:background="@drawable/shape1"/>
+        <Button
+            android:layout_marginTop="30dp"
+            android:id="@+id/durgalakshmi"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Durga Mahalakshmi Products"
+            android:background="@drawable/shape1"/>
+        <Button
+            android:layout_marginTop="50dp"
+            android:id="@+id/login"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:text="login"
+            android:textColor="@color/black"
+            android:background="@drawable/shape"/>
+    </LinearLayout>
+
+</LinearLayout>
+

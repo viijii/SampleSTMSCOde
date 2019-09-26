@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+            android:id="@+id/g1"
+            android:checkableBehavior="single">
+        <item android:id="@+id/profile"
+            android:icon="@drawable/person"
+            android:title="Profile" />
+    </group>
+
+    <group
+        android:id="@+id/g2"
+        android:checkableBehavior="single">
+        <item android:id="@+id/customerNotifications"
+            android:icon="@drawable/notifications"
+            android:title="CustomerNotifications" />
+    </group>
+
+    <group
+        android:id="@+id/g10"
+        android:checkableBehavior="single">
+        <item android:id="@+id/managetask"
+            android:icon="@drawable/assignment"
+            android:title="Manage Task" />
+    </group>
+
+    <group
+        android:id="@+id/g3"
+        android:checkableBehavior="single">
+        <item android:id="@+id/manageCustomers"
+            android:icon="@drawable/customers"
+            android:title="Manage Customers" />
+    </group>
+
+    <group
+        android:id="@+id/g4"
+        android:checkableBehavior="single">
+        <item android:id="@+id/manageVehicles"
+            android:icon="@drawable/vehicles"
+            android:title="Manage Vehicles" />
+    </group>
+
+    <group
+        android:id="@+id/g5"
+        android:checkableBehavior="single">
+        <item android:id="@+id/manageEmployees"
+            android:icon="@drawable/users"
+        android:title="Manage Employees" />
+    </group>
+
+    <group
+        android:id="@+id/g6"
+        android:checkableBehavior="single">
+        <item android:id="@+id/fieldActivity"
+            android:icon="@drawable/fieldactivity"
+            android:title="Field Activity" />
+    </group>
+
+    <group
+        android:id="@+id/g7"
+        android:checkableBehavior="single">
+        <item android:id="@+id/quotations"
+            android:icon="@drawable/home"
+            android:title="Quotations" />
+    </group>
+    <group
+        android:id="@+id/g8"
+        android:checkableBehavior="single">
+        <item android:id="@+id/updates"
+            android:icon="@drawable/ic_update"
+            android:title="Updates" />
+    </group>
+    <group
+        android:id="@+id/g9"
+        android:checkableBehavior="single">
+        <item android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+
+
+</menu>

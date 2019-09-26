@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            app:navigationIcon="?attr/homeAsUpIndicator"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/editEmployee"
+                    android:text="Enter Vehicle Details"
+                    android:textColor="@color/black"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/empid_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/vehid1"
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:hint="VehicleId*" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/designation1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/desig_tv"
+                            android:layout_width="205dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:hint="CustomerInfo*" />
+
+                        <Spinner
+                            android:id="@+id/customer1"
+                            android:layout_width="144dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/designation"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    </LinearLayout>
+
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/team1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="">
+
+                        <TextView
+                            android:id="@+id/team_tv"
+                            android:layout_width="205dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:hint="Vehical Type*" />
+
+                        <Spinner
+                            android:id="@+id/vehical_type1"
+                            android:layout_width="144dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/designation"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    </LinearLayout>
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/veh_modelType"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="">
+
+                        <TextView
+                            android:id="@+id/veh_model"
+                            android:layout_width="205dp"
+                            android:visibility="visible"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:hint="Vehical Model*" />
+
+                        <Spinner
+                            android:id="@+id/vehical_model"
+                            android:layout_width="144dp"
+                            android:visibility="gone"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/designation"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    </LinearLayout>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/team_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/vtype_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:hint="Enter Vehical Type"
+                        android:visibility="gone"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tracker_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/tracker_id1"
+                        android:inputType="text"
+                        android:hint="Enter Tracker UserId*"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/password_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/password1"
+                        android:inputType="text"
+                        android:hint="Enter Tracker Password*"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/purchase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/purchase_date"
+                        android:inputType="date"
+                        android:hint="yyyy-MM-dd"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/nextService"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/next_service"
+                        android:inputType="text"
+                        android:hint="Enter Next Service*"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/submit1"
+                    android:layout_width="108dp"
+                    android:layout_height="63dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Submit"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

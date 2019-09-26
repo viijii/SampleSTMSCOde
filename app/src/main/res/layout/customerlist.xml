@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/row"
+    android:minHeight="50dp">
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="CustomerNamae "
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text=": "
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/customerName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:hint="customername"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/black"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="MobileNumber "
+
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text=": "
+                        android:textSize="15dp" />
+
+
+                    <TextView
+                        android:id="@+id/mobile"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:text="MobileNumber"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/call"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/ic_call_black_24dp"
+                        android:paddingLeft="30dp"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/state1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/delete"
+                        android:textSize="15dp"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="No of Vehicles" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text=": "
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/noOfveh"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"
+                        android:layout_height="wrap_content"
+                        android:text="no.of vehicles" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/state2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="120dp"
+                        android:textSize="15dp"
+                        android:layout_height="wrap_content"
+                        android:text="Address" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text=": "
+                        android:textSize="15dp" />
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:textSize="15dp"
+                        android:hint="address"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="120dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:gravity="center"
+                            android:id="@+id/view"
+                            android:layout_marginLeft="10dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/green"
+                            android:textColor="@color/white"
+                            android:text="View"/>
+                        <TextView
+                            android:id="@+id/update"
+                            android:layout_width="60dp"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:background="@color/black"
+                            android:text="Update"
+                            android:textColor="@color/white"
+                            android:layout_marginLeft="10dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/deleteButton"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/red"
+                            android:gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:text="Delete"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

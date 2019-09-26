@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="0dp">
+
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+
+            <TableRow>
+                <TextView
+                    android:background="@drawable/shape1"
+                    android:id="@+id/vehicletye1"
+                    android:layout_width="223dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="VehicleType"
+                    android:textSize="15dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:background="@drawable/shape1"
+                    android:id="@+id/vehicleid1"
+                    android:layout_width="223dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="vehicleid"
+                    android:gravity="center"
+                    android:textSize="15dp" />
+
+            </TableRow>
+
+
+
+        </TableLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

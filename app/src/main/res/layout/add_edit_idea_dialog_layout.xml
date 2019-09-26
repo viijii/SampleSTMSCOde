@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="200dp"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:id="@+id/proj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:text="Title "
+            android:layout_marginTop="15dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Tittle"
+            android:layout_marginTop="15dp"
+            android:inputType="text"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/shape1"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            tools:maxLength="50" />
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:layout_width="108dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:text="Select Vehicle  "
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=": "
+        android:layout_marginTop="15dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/comll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complaint "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+        <TextView android:layout_marginTop="10dp"
+            android:layout_marginLeft="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/shape1"
+            android:hint="    Description"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/imagell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Image "
+            android:paddingLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+        <TextView
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text=": "
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:background="@drawable/camera"
+            android:id="@+id/image"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:hint=" image"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+</LinearLayout>
+
